@@ -2,7 +2,7 @@
 
 Personal research writer and analyst portfolio for Shubham Sonale, alongside **Velora** — an independent intelligence publication exploring advancements in artificial intelligence, technology architecture, and cognitive agents.
 
-🔗 **Live Site:** [https://shubhamsonale2004-ux.github.io/Velora/](https://shubhamsonale2004-ux.github.io/Velora/)
+🔗 **Live Site:** [https://shubhams2004.github.io/Velora/](https://shubhams2004.github.io/Velora/)
 
 ---
 
