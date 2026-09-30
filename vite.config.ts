@@ -8,10 +8,7 @@ const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(() => {
   return {
-    // Relative base path ensures all asset URLs (scripts, stylesheets, fonts)
-    // resolve correctly regardless of whether the site is hosted at:
-    // https://<user>.github.io/Velora/, https://<user>.github.io/web/, /docs, or a custom root domain.
-    base: './',
+    base: '/Velora/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -21,20 +18,12 @@ export default defineConfig(() => {
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
-      cssCodeSplit: false,
-      minify: 'esbuild' as const,
-      rollupOptions: {
-        output: {
-          entryFileNames: 'assets/index.js',
-          chunkFileNames: 'assets/[name].js',
-          assetFileNames: 'assets/[name].[ext]',
-        },
-      },
     },
     server: {
       host: '0.0.0.0',
       port: 3000,
       strictPort: true,
+      allowedHosts: true as const,
     },
   };
 });
